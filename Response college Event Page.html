@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Event Banner */
+        .banner {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Registration Button */
+        .register-btn {
+            display: inline-block;
+            background-color: #ff9800;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .register-btn:hover {
+            background-color: #e68900;
+        }
+
+        /* Schedule Section */
+        .schedule {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .schedule h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #243b55;
+        }
+
+        
+        .schedule-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .event-card {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-card h3 {
+            color: #ff9800;
+            margin-bottom: 12px;
+        }
+
+        .event-card p {
+            line-height: 1.6;
+        }
+
+        
+        .registration {
+            text-align: center;
+            padding: 30px 20px 50px;
+        }
+
+        .registration h2 {
+            margin-bottom: 20px;
+        }
+
+        
+        footer {
+            background-color: #141e30;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 600px) {
+            .banner {
+                padding: 40px 15px;
+            }
+
+            .banner h1 {
+                font-size: 28px;
+            }
+
+            .banner p {
+                font-size: 16px;
+            }
+
+            .schedule h2 {
+                font-size: 24px;
+            }
+
+            .schedule-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event-card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header class="banner">
+        <h1>College Tech Fest 2026</h1>
+        <p>Explore Technology, Innovation and Creativity!</p>
+        <p><strong>Date:</strong> November 15, 2026</p>
+        <a href="#register" class="register-btn">Register Now</a>
+    </header>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <h2>Event Schedule</h2>
+
+        <div class="schedule-container">
+
+            <div class="event-card">
+                <h3>09:00 AM</h3>
+                <p><strong>Inauguration</strong></p>
+                <p>Welcome speech and opening ceremony.</p>
+            </div>
+
+            <div class="event-card">
+                <h3>10:30 AM</h3>
+                <p><strong>Technical Workshop</strong></p>
+                <p>Learn about web development and AI technology.</p>
+            </div>
+
+            <div class="event-card">
+                <h3>01:00 PM</h3>
+                <p><strong>Project Exhibition</strong></p>
+                <p>Showcase creative projects and innovative ideas.</p>
+            </div>
+
+            <div class="event-card">
+                <h3>03:00 PM</h3>
+                <p><strong>Prize Distribution</strong></p>
+                <p>Celebrate the winners and closing ceremony.</p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="registration" id="register">
+        <h2>Join Our College Tech Fest!</h2>
+        <p>Be part of an exciting day filled with learning and innovation.</p>
+        <br>
+        <a href="mailto:events@example.com?subject=Tech%20Fest%20Registration"
+           class="register-btn">Register Now</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 College Tech Fest. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
